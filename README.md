@@ -26,7 +26,7 @@ The machine learning process involves the following:
 The following are the results of the logistic regression machine learning model using the original imbalanced dataset and the over-sampled dataset:
 
 * Model 1: Logistic Regresssion with original imbalanced training dataset:
-  * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 85%, and the recall ('predictions' using the training data) was 99% versus 91%.
+  * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 85%, and the recall ('predictions' using the training data) was 99% for the healthy loans versus 91% for the high-risk loans.
 
 
 * Model 2: Logistic Regresssion with over-sampled 'balanced' training dataset:
