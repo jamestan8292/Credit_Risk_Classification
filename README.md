@@ -26,18 +26,20 @@ The machine learning process involves the following:
 The following are the results of the logistic regression machine learning model using the original imbalanced dataset and the over-sampled dataset:
 
 * Model 1: Logistic Regresssion with original imbalanced training dataset:
-  * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 85%, and the recall ('predictions' using the training data) was 99% for the healthy loans versus 91% for the high-risk loans.
+  * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 85%, and the recall ('predictions' using the training data) was 99% for the healthy loans versus 91% for the high-risk loans. The balanced accuracy score for this model is 95.2%.
 
 
 * Model 2: Logistic Regresssion with over-sampled 'balanced' training dataset:
-  * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 84%, and the recall ('predictions' using the training data) was 99% for both training and test data.
+  * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 84%, and the recall ('predictions' using the training data) was 99% for both training and test data. The balanced accuracy score for this model is 99.4%.
 
 
 ## Summary
 
 The above results showed that the logistic regresssion model using over-sampling provides a better overall result. The f1 score for the prediction of high-risk loans (91%), a more important measure in this case, is 3% higher than using logistics regression with the original dataset.
 
-It is recommended that logistic regresssion model using over-sampling be used when predicting if a loan is high risk.
+The balanced accuracy score for Model 2 is also better than than of Model 1.
+
+It is recommended that logistic regresssion model using over-sampling (Model 2) be used when predicting if a loan is high risk.
 
 
 ---
