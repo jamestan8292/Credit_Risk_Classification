@@ -18,18 +18,18 @@ The machine learning process involves the following:
 
 4. Instantiate a logistic regression model, fit (ie. train) the model using the training data, then use the model to predict the loan status using the test data.
 
-5. Since the dataset is highly unbalanced in number of healthy versus high-risk loans, the original data is run through a Random Over Sampler algorithm (from Python imblearn library) to produce a balanced dataset with the same number of healthy and high risk loans. The logistics regression machine learning model is then used on the over-sampled dataset.
+5. Since the dataset is highly unbalanced in number of healthy versus high-risk loans, the original training data is run through a Random Over Sampler algorithm (from Python imblearn library) to produce a balanced dataset with the same number of healthy and high risk loans. The logistics regression machine learning model is then built on the over-sampled dataset. The original set of test data is then run through the new model.
 
 
 ## Results
 
 The following are the results of the logistic regression machine learning model using the original imbalanced dataset and the over-sampled dataset:
 
-* Model 1: Logistic Regresssion with original imbalanced dataset:
+* Model 1: Logistic Regresssion with original imbalanced training dataset:
   * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 85%, and the recall ('predictions' using the training data) was 99% versus 91%.
 
 
-* Model 2: Logistic Regresssion with original over-sampled 'balanced' dataset:
+* Model 2: Logistic Regresssion with over-sampled 'balanced' training dataset:
   * The overall accuracy was 99%, precision (correct predictions) using the test data for healthy loans versus high-risk loans were 100% versus 84%, and the recall ('predictions' using the training data) was 99% for both training and test data.
 
 
